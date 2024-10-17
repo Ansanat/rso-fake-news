@@ -1,5 +1,6 @@
 <template>
-  <Navbar/>
+  <Navbar id="head"/>
+  <router-view />
 </template>
 
 <script>
@@ -19,6 +20,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding-bottom: 500px;
 }
 </style>
