@@ -1,15 +1,18 @@
 <template>
   <Navbar id="head"/>
   <router-view />
+  <Footer/>
 </template>
 
 <script>
 import Navbar from './components/nav-bar.vue'
+import Footer from './components/v-footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Footer
   }
 }
 </script>
@@ -22,6 +25,5 @@ export default {
   color: #2c3e50;
   background-color: #ebebeb;
   border-radius: 10px;
-  padding-bottom: 500px;
 }
 </style>
