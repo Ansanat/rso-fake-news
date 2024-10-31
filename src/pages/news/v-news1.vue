@@ -7,6 +7,8 @@
       <div class="article-content-text">
         Вор, которого не могли поймать уже несколько лет, попался на краже отрядных значков. <br> <br>
         «<i>Да я думал, что это ордена какие-то. Он по улице шел, у него вся форма увешана была. Подумал, может ветеран какой-то. Понял, что что-то не так, когда в ломбарде на меня как на дебила посмотрели</i>» - прокомментировал ситуацию пойманный преступник.
+        <NextNews text="Предыдущая статья"/>
+        <NextNews text="Следующая статья"/>
       </div>
     </div>
   </div>
@@ -14,11 +16,13 @@
 
 <script>
 import BackToMainButton from '@/components/v-back-to-main.vue'
+import NextNews from '@/components/v-next-news.vue'
 
 export default {
   name: 'v-news1',
   components: {
     BackToMainButton,
+    NextNews
   },
   props: {
   }
