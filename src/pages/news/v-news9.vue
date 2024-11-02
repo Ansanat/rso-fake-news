@@ -1,7 +1,7 @@
 <template>
   <div class="article">
     <BackToMainButton/>
-    <div class="article-title">⚡️Необходимо созать тренд отрядоберов</div>
+    <div class="article-title">⚡️Необходимо создать тренд отрядоберов</div>
     <div class="article-content">
       <img src="/previews/preview9.jpg" class="article-content-image"/>
       <div class="article-content-text">
