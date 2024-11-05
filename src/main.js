@@ -11,6 +11,7 @@ import News6 from '@/pages/news/v-news6'
 import News7 from '@/pages/news/v-news7'
 import News8 from '@/pages/news/v-news8'
 import News9 from '@/pages/news/v-news9'
+import News10 from '@/pages/news/v-news10'
 
 
 import { createRouter, createWebHistory } from 'vue-router'
@@ -75,6 +76,11 @@ const router = createRouter ({
             path: '/news/article9',
             component: News9,
             name: 'News9'
+        },
+        {
+            path: '/news/article10',
+            component: News10,
+            name: 'News10'
         },
     ],
     history: createWebHistory()
