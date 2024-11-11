@@ -1,32 +1,51 @@
 <template>
   <div class="nav-bar">
-  <router-link :to="{ name: 'Main', hash: '#head'}" class="router">
-    <img src="@/img/logo.png" class="logo"/>
-    <div class="name"> РСО fake news </div>
-  </router-link>
+    <div class="nav-bar-items">
+      <BurgerMenu class="burger-menu"/>
+        <img src="@/img/logo.png" class="logo"/>
+        <router-link :to="{ name: 'Main', hash: '#head'}" class="router name"> РСО fake news </router-link>
+    </div>
   </div>
 </template>
 
 <script>
+import BurgerMenu from '@/components/v-burger-menu.vue'
+
 export default {
   name: 'nav-bar',
   props: {
-  }
+  },
+  components: {
+    BurgerMenu,
+  },
 }
 </script>
 
 <style>
+.burger-menu {
+
+}
+
 .nav-bar {
   width: 100%;
   height: 60px;
   background-color: #184678;
-  border-radius: 10px;
+  position: sticky;
+  top: 0px;
+}
+
+.nav-bar-items {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
 }
 
 .logo {
   width: 50px;
   float: left;
-  margin: 5px 0px 0px 10px;
+  margin: 5px 0px 0px 15px;
 }
 
 .name {
@@ -34,7 +53,6 @@ export default {
   font-size: 23px;
   font-family: Helvetica, sans-serif;
   text-shadow: 2px 2px 10px black;
-  padding: 15px 0px 0px 70px;
 }
 
 .router {
@@ -47,12 +65,18 @@ export default {
   }
 
   .logo {
-    width: 60px;
+    width: 50px;
+    margin-left: 30px;
+  }
+
+  .nav-bar-items {
+    gap: 2px;
+    height: 70px;
   }
 
   .name {
-    padding: 17px 0px 0px  80px;
-    font-size: 27px;
+    padding: 0px 0px 0px 5px;
+    font-size: 22px;
   }
 }
 </style>

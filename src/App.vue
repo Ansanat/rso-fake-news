@@ -1,7 +1,9 @@
 <template>
-  <Navbar id="head"/>
-  <router-view class="content" />
-  <Footer/>
+  <div id="head">
+    <Navbar/>
+    <router-view class="content" />
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -25,5 +27,9 @@ export default {
   color: #2c3e50;
   background-color: #ebebeb;
   border-radius: 10px;
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
 }
 </style>

@@ -19,7 +19,6 @@ export default {
   width: 100%;
   height: 60px;
   background-color: #184678;
-  border-radius: 10px;
   margin-top: 50px;
   display: flex;
   align-items: center;

@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import Main from '@/pages/v-main-page'
+import Articles from '@/pages/v-articles-page'
 
 import News1 from '@/pages/news/v-news1'
 import News2 from '@/pages/news/v-news2'
@@ -32,6 +33,11 @@ const router = createRouter ({
             path: '/',
             component: Main,
             name: 'Main'
+        },
+        {
+            path: '/articles',
+            component: Articles,
+            name: 'Articles'
         },
         {
             path: '/news/article1',
