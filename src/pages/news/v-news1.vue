@@ -1,6 +1,5 @@
 <template>
   <div class="article">
-    <BackToMainButton/>
     <div class="article-title">⚡️Попался на краже значков</div>
     <div class="article-content">
       <img src="/previews/preview1.jpg" class="article-content-image"/>
@@ -9,6 +8,7 @@
         «<i>Да я думал, что это ордена какие-то. Он по улице шел, у него вся форма увешана была. Подумал, может ветеран какой-то. Понял, что что-то не так, когда в ломбарде на меня как на дебила посмотрели</i>» - прокомментировал ситуацию пойманный преступник.
         <div class="button-block">
             <NextNews text="Следующая статья" route="News2"/>
+            <NextNews text="К новостям" route="Main"/>
         </div>
       </div>
     </div>
@@ -16,13 +16,11 @@
 </template>
 
 <script>
-import BackToMainButton from '@/components/v-back-to-main.vue'
 import NextNews from '@/components/v-next-news.vue'
 
 export default {
   name: 'v-news1',
   components: {
-    BackToMainButton,
     NextNews
   },
   props: {

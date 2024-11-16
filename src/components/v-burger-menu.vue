@@ -1,6 +1,6 @@
 <template>
   <div class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" />
+    <input id="menu__toggle" type="checkbox" v-model="open"/>
     <label class="menu__btn" for="menu__toggle">
       <span></span>
     </label>
@@ -13,9 +13,28 @@
 </template>
 
 <script>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 export default {
   name: 'burger-menu',
   props: {
+  },
+  setup() {
+    let open = ref(false);
+    const handleClick = () => {
+      open.value = false;
+    };
+
+    onMounted(() => {
+      window.addEventListener('click', handleClick);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener('click', handleClick);
+    });
+
+    return {
+      open
+    }
   }
 }
 </script>

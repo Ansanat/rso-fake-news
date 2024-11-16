@@ -1,6 +1,5 @@
 <template>
   <div class="article">
-    <BackToMainButton/>
     <div class="article-title">⚡️Страны, входящие в БРИКС, создадут студотряды</div>
     <div class="article-content">
       <img src="/previews/preview7.jpg" class="article-content-image"/>
@@ -10,6 +9,7 @@
         <div class="button-block">
           <NextNews text="Предыдущая статья" route="News6"/>
           <NextNews text="Следующая статья" route="News8"/>
+          <NextNews text="К новостям" route="Main"/>
         </div>
       </div>
     </div>
@@ -17,13 +17,11 @@
 </template>
 
 <script>
-import BackToMainButton from '@/components/v-back-to-main.vue'
 import NextNews from '@/components/v-next-news.vue'
 
 export default {
   name: 'v-news7',
   components: {
-    BackToMainButton,
     NextNews
   },
   props: {
